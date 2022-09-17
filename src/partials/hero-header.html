@@ -19,42 +19,52 @@
 </div>
 </header>
 		<section class="section-hero">
-		<div class="section-hero__bg">
-			<div class="section-hero__dots">
+			<div class="section-hero__container container">
+				<div class="section-hero__dots-left">
+					<picture>
+						<source media="(max-width:767px)" srcset="./images/hero_dotsleft_mobile_1x.png 1x, ./images/hero_dotsleft_mobile_2x.png 2x">
+						<img src="./images/hero_dotsleft_mobile_1x.png" alt="bg-dots">
+					</picture>
+				</div>
+				<div class="section-hero__dots-right">
+					<picture>
+						<source media="(max-width:767px)" srcset="./images/hero_dotsright_mobile_1x.png 1x, ./images/hero_dotsright_mobile_2x.png 2x">
+						<img src="./images/hero_dotsright_mobile_1x.png" alt="bg-dots">
+					</picture>
+				</div>		
+				<div class="section-hero__dots">
 				<picture>
-					<source media="(min-width:1200px)" srcset="./images/hero_dots_desktop_1x.png">
-					<source media="(min-width:768px)" srcset="./images/hero_dots_tablet_1x.png">
-					<source media="(max-width:767px)" srcset="./images/hero_dots_mobile_1x.png">
-					<img src="./images/hero_dots_mobile_1x.png" alt="bg-dots"></div>
+					<source media="(min-width:1200px)" srcset="./images/hero_dots_desktop_1x.png 1x, ./images/hero_dots_desktop_2x.png 2x">
+					<source media="(min-width:768px)" srcset="./images/hero_dots_tablet_1x.png 1x, ./images/hero_dots_tablet_2x.png 2x">
+					<img src="./images/hero_dots_tablet_1x.png" alt="bg-dots">
+				</div>
 				</picture>
-
 			<div class="section-hero__shadow">
 				<picture>
-					<source media="(min-width:1200px)" srcset="./images/hero_shadow_desktop_1x.png">
-					<source media="(min-width:768px)" srcset="./images/hero_shadow_tablet_1x.png">
-					<source media="(max-width:767px)" srcset="./images/hero_shadow_mobile_1x.png">
-					<img src="./images/hero_shadow_mobile_1x.png" alt="bg-shadow"></div>
+					<source media="(min-width:1200px)" srcset="./images/hero_shadow_desktop_1x.png 1x, ./images/hero_shadow_desktop_2x.png 2x">
+					<source media="(min-width:768px)" srcset="./images/hero_shadow_tablet_1x.png 1x, ./images/hero_shadow_tablet_2x.png 2x">
+					<img src="./images/hero_shadow_tablet_1x.png" alt="bg-shadow">
+				</div>
 				</picture>
 			<div class="section-hero__icecream">
 				<picture>
-					<source media="(min-width:1200px)" srcset="./images/hero_ice_desktop_1x.png">
-					<source media="(min-width:768px)" srcset="./images/hero_ice_tablet_1x.png">
-					<source media="(max-width:767px)" srcset="./images/hero_ice_mobile_1x.png">
-					<img src="./images/hero_ice_mobile_1x.png" alt="bg-icecream"></div>
+					<source media="(min-width:1200px)" srcset="./images/hero_ice_desktop_1x.png 1x, ./images/hero_ice_desktop_2x.png 2x">
+					<source media="(min-width:768px)" srcset="./images/hero_ice_tablet_1x.png 1x, ./images/hero_ice_tablet_2x.png 2x">
+					<source media="(max-width:767px)" srcset="./images/hero_ice_mobile_1x.png 1x, ./images/hero_ice_mobile_2x.png 2x">
+					<img src="./images/hero_ice_mobile_1x.png" alt="bg-icecream">
+				</div>
 				</picture>
 				<div class="section-hero__plate">
 				<picture>
-					<source media="(min-width:1200px)" srcset="./images/many_ice_cream_desktop_1x.png">
-					<source media="(min-width:768px)" srcset="./images/many_ice_cream_tablet_1x.png">
+					<source media="(min-width:1200px)" srcset="./images/many_ice_cream_desktop_1x.png 1x, ./images/many_ice_cream_desktop_2x.png 2x">
+					<source media="(min-width:768px)" srcset="./images/many_ice_cream_tablet_1x.png 1x, ./images/many_ice_cream_tablet_2x.png">
 					<img src="./images/many_ice_cream_tablet_1x.png" alt="bg-plate">
 				</picture>
 				</div>
-			</div>
-		
-			<div class="section-hero__container container">
+
+
 				<div class="section-hero__item">
-				<h1 class="section-hero__title">ice cream made with</h1>
-				<h1 class="section-hero__title section-hero__title--size">passion</h1>
+				<h1 class="section-hero__title">ice cream made with <span>passion</span></h1>
 				<ul class="section-hero__list">
 					<li class="section-hero__item">
 						<a href="" class="button-link">Products</a>
@@ -68,12 +78,12 @@
 				<div class="section-hero__item hero-item">
 					<ul class="hero-item__list">
 						<li class="hero-item__items">
-							<div class="hero-item__number">16</div>
-							<div class="hero-item__text">cafes</div>
+							<span class="hero-item__number">16</span>
+							<p class="hero-item__text">cafes</p>
 						</li>
 							<li class="hero-item__items">
-							<div class="hero-item__number">23</div>
-							<div class="hero-item__text">food trucks</div>
+							<span class="hero-item__number">23</span>
+							<p class="hero-item__text">food trucks</p>
 						</li>
 					</ul>
 				</div>
