@@ -1,22 +1,3 @@
-.wrap-reviews {
-    height: 940px;
-    @media screen and (max-width: 767px) {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: linear-gradient(
-              rgba(252, 252, 252, 0.5),
-              rgba(252, 252, 252, 0.5)),
-              url(../images/fon_icecreem_gallery_mod_1x.png);
-          @include retina {
-              background-image: linear-gradient(
-                  rgba(252, 252, 252, 0.5),
-                  rgba(252, 252, 252, 0.5)), 
-              url(../images/fon_icecreem_gallery_mod_2x.png);
-          } 
-    }
-    
-}
 .swiper {
   width: 100%;
   height: 100%;
@@ -25,7 +6,7 @@
 .swiper-wrapper {
   padding-bottom: 14px;
   @include tablet {
-    padding-bottom: 32px;
+  padding-bottom: 32px;
   }
 
 }
@@ -34,9 +15,15 @@
   display: block;
   width: 85px;
   height: 85px;
-  margin: 32px auto;
+  margin: 55px auto 32px;
   border-radius: 50%;
   overflow: hidden;
+  @include tablet {
+    margin: 0px auto 28px;
+  }
+  @include desktop {
+    margin: 34px auto 32px;
+  }
 
 }
 

@@ -62,12 +62,14 @@ padding-bottom: 384px;
       width: 704px;
         height: 327px;
         top: -161px;
+        margin-bottom: -100px;
     }
     @include desktop {
       border-radius: 24px;
       width: 1013px;
         height: 422px;
         top: -94px;
+        margin-bottom: 0;
     }
   }
   @keyframes galleryanimation {
