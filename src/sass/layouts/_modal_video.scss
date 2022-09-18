@@ -78,13 +78,13 @@
   }
 }
 
-.close__modal__icon {
+.close__modal__video__icon {
   position: absolute;
   width: 16px;
   height: 16px;
   top: 8px;
   right: 8px;
-
+  cursor: pointer;
   @media screen and (min-width: 768px) {
     width: 20px;
     height: 20px;
