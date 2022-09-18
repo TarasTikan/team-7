@@ -2,6 +2,7 @@
     width: 100%;
     max-width: 1920px;
 //   height: 400px;
+padding-bottom: 384px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--secondary-text-color);
@@ -19,6 +20,7 @@
               url(../images/fon_icecreem_gallery_mod_2x.png);
           } 
   @include tablet {
+    padding-bottom: 373px;
     background-image: linear-gradient(
         rgba(252, 252, 252, 0.5),
         rgba(252, 252, 252, 0.5)),
@@ -30,6 +32,7 @@
         url(../images/fon_icecreem_gallery_tab_2x.png);
     }}
   @include desktop {
+    padding-bottom: 197px;
     background-image: linear-gradient(
         rgba(252, 252, 252, 0.5),
         rgba(252, 252, 252, 0.5)),
