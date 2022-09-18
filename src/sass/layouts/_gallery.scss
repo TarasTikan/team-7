@@ -1,0 +1,115 @@
+.reviews-gallery {
+    width: 100%;
+    max-width: 1920px;
+//   height: 400px;
+padding-bottom: 384px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--secondary-text-color);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: linear-gradient(
+              rgba(252, 252, 252, 0.5),
+              rgba(252, 252, 252, 0.5)),
+              url(../images/fon_icecreem_gallery_mod_1x.png);
+          @include retina {
+              background-image: linear-gradient(
+                  rgba(252, 252, 252, 0.5),
+                  rgba(252, 252, 252, 0.5)), 
+              url(../images/fon_icecreem_gallery_mod_2x.png);
+          } 
+  @include tablet {
+    padding-bottom: 373px;
+    background-image: linear-gradient(
+        rgba(252, 252, 252, 0.5),
+        rgba(252, 252, 252, 0.5)),
+        url(../images/fon_icecreem_gallery_tab_1x.png);
+    @include retina {
+        background-image: linear-gradient(
+            rgba(252, 252, 252, 0.5),
+            rgba(252, 252, 252, 0.5)), 
+        url(../images/fon_icecreem_gallery_tab_2x.png);
+    }}
+  @include desktop {
+    padding-bottom: 197px;
+    background-size: cover;
+    background-image: linear-gradient(
+        rgba(252, 252, 252, 0.5),
+        rgba(252, 252, 252, 0.5)),
+        url(../images/fon_icecreem_gallery_1x.png);
+    @include retina {
+        background-image: linear-gradient(
+            rgba(252, 252, 252, 0.5),
+            rgba(252, 252, 252, 0.5)), 
+        url(../images/fon_icecreem_gallery_2x.png);
+    }}
+}
+.wrap-gallery {
+    position: relative;
+    top: -24px;
+    min-width: 279px;
+    min-height: 130px;
+    margin: 0 auto;
+    border-radius: 7px;
+    overflow: hidden;
+    @include mobile {
+        width: 440px;
+        height: 205px;
+    }
+    @include tablet {
+      border-radius: 18px;
+      width: 704px;
+        height: 327px;
+        top: -161px;
+    }
+    @include desktop {
+      border-radius: 24px;
+      width: 1013px;
+        height: 422px;
+        top: -94px;
+    }
+  }
+  @keyframes galleryanimation {
+    0% {
+      opacity: 0;
+    }
+    12.12% {
+      opacity: 1;
+    }
+    35.35% {
+      opacity: 1;
+    }
+    45.45% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .wrap-gallery img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0;
+    animation-name: galleryanimation;
+    animation-duration: 17s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  .gallery-first {
+    animation-delay: 0s;
+  }
+  
+  .gallery-second {
+    animation-delay: 6s;
+  }
+  
+  .gallery-third {
+    animation-delay: 11s;
+  }
