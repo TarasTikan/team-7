@@ -2,6 +2,12 @@
   padding-top: 42px;
   padding-bottom: 60px;
   background-color: var(--primary-bg-color);
+  @include tablet {
+    padding-bottom: 204px;
+  }
+  @include desktop {
+   padding-bottom: 180px;
+     }
 
 }
 
@@ -11,7 +17,6 @@
      display: flex;
      align-items: center;
      justify-content: baseline;
-
     }
 }
 
