@@ -1,21 +1,35 @@
+
+	
 <header class="header">
 <div class="header__container container">
-	<a href="" class="header__logo"><img src="./images/logo.png" alt="logo"></a>
-		<div class="header__menu">
+	<a href="" class="header__logo">
+		<picture>
+				<source media="(min-width:1200px)" srcset="./images/logo.png">
+				<img src="./images/logo_mobile.png" alt="logo"></a>
+		</picture>
+		
+		<div class="header__menu" id="home">
 				<nav class="header__nav">
 					<ul class="header__list">
-						<li class="header__item"><a href="" class="header__link">Home</a></li>
-						<li class="header__item"><a href="" class="header__link">How it’s made?</a></li>
-						<li class="header__item"><a href="" class="header__link">Our products</a></li>
-						<li class="header__item"><a href="" class="header__link">Contact</a></li>
+						<div class="header__menu-box container">
+						<a href="" class="header__logo"><img src="./images/logo_mobile.png" alt="logo"></a>
+						<button class="button-burger-close">
+						<svg class="button-icon-close" width="32" height="32"><use href="./images/icons.svg#icon-ep_close"></use></svg>
+						</button>
+						</div>
+					
+						<li class="header__item"><a href="#home" class="header__link">Home</a></li>
+						<li class="header__item"><a href="#howitsmade" class="header__link">How it’s made?</a></li>
+						<li class="header__item"><a href="#products" class="header__link">Our products</a></li>
+						<li class="header__item"><a href="#contact" class="header__link">Contact</a></li>
 					</ul>
 				</nav>
-				<button class="button button--margin js-open-modal" data-modal="buynow">Buy now<svg class="button-icon" width="12" height="12"><use href="./images/icons.svg#icon-arrow-bth"></use></svg></button>
+				<button class="button button--margin button-hide-menu">Buy nows<svg class="button-icon" width="12" height="12"><use href="./images/icons.svg#icon-arrow-bth"></use></svg></button>
 			</div>
-			<button class="button-burger">
-				<svg class="buttton-icon" width="32" height="32"><use href="./images/icons.svg#icon-Burger"></use></svg>
-				<svg class="buttton-icon" width="32" height="32"><use href="./images/icons.svg#icon-ep_close"></use></svg>
+			<button class="button-burger-open">
+				<svg class="button-icon-open" width="32" height="32"><use href="./images/icons.svg#icon-Burger"></use></svg>
 			</button>
+			<button class="button button-hide-header">Buy nows<svg class="button-icon" width="12" height="12"><use href="./images/icons.svg#icon-arrow-bth"></use></svg></button>
 </div>
 </header>
 		<section class="section-hero">
@@ -39,7 +53,7 @@
 					<img src="./images/hero_dots_tablet_1x.png" alt="bg-dots">
 				</div>
 				</picture>
-			<div class="section-hero__shadow">
+			<div class="section-hero__shadow animate__animated animate__fadeIn animate__delay-1s">
 				<picture>
 					<source media="(min-width:1200px)" srcset="./images/hero_shadow_desktop_1x.png 1x, ./images/hero_shadow_desktop_2x.png 2x">
 					<source media="(min-width:768px)" srcset="./images/hero_shadow_tablet_1x.png 1x, ./images/hero_shadow_tablet_2x.png 2x">
@@ -64,13 +78,13 @@
 
 				<div class="section-hero__body">
 						<div class="section-hero__item">
-				<h1 class="section-hero__title">ice cream made with <span>passion</span></h1>
+				<h1 class="section-hero__title animate__animated animate__tada">ice cream made with <span>passion</span></h1>
 				<ul class="section-hero__list">
 					<li class="section-hero__item">
-						<a href="" class="button-link">Products</a>
+						<a href="#products" class="button-link">Products</a>
 					</li>
 						<li class="section-hero__item">
-						<a href="" class="section-hero__link">How it’s made?</a>
+						<a href="#howitsmade" class="section-hero__link link-hover">How it’s made?</a>
 					</li>
 				</ul>
 
@@ -90,10 +104,9 @@
 				</div>
 				<div class="section-hero__info">
 					<p class="section-hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-					<a href="" class="section-hero__link"> <svg class="section-hero-link__icon">
-						<use href="./images/icons.svg#icon-default-arrow"></use></svg></a>
-						<use href="./images/icons.svg#icon-hover-arrow"></use></svg></a>
-						<use href="./images/icons.svg#icon-focus-arrow"></use></svg></a>
+					<a href="" class="section-hero__arrow"> <svg class="section-hero-link__icon" width="40" height="16"><use href="./images/icons.svg#icon-default-arrow"></use></svg>
 				</div>
 			</div>
 		</section>
+	
+		
