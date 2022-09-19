@@ -1,8 +1,6 @@
 
 
 .modal__map {
-  opacity: 0;
-  visibility: hidden;
 
   display: flex;
   flex-direction: column;
@@ -24,13 +22,8 @@
   border: 2px solid #f8d24e;
   border-radius: 10px;
 
-  z-index: 33;
-
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-100%, -50%);
-  transition: 250ms all;
+  max-height: 90%;
+  overflow-y: scroll;
 
   @media screen and (min-width: 480px) {
     width: 440px;
@@ -44,14 +37,8 @@
   }
 }
 
-.modal.active,
-.overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
-
 .modal.active {
-  transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .modal__map__title {
