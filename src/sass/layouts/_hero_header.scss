@@ -1,7 +1,10 @@
+<<<<<<< Updated upstream
 //
 
 
 
+=======
+>>>>>>> Stashed changes
 //-------------------HEADER--------------------------//
  
 .header {
@@ -36,7 +39,10 @@
 
 	
 }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .header__menu {
 	@media screen and (max-width:1199px){
 	position: absolute;
@@ -116,11 +122,17 @@ line-height: 1.25;
 	}
 	@include desktop{
 		padding: 27px 0;
+<<<<<<< Updated upstream
 
 	}
 }
 
 
+=======
+	}
+}
+
+>>>>>>> Stashed changes
 .button-burger-open {
 	cursor: pointer;
 	display: flex;
@@ -424,6 +436,7 @@ color: var(--secondary-text-color);
 		width: 154px;
 		line-height: 1.21;
 		white-space: nowrap;
+<<<<<<< Updated upstream
 			transform: rotate(0deg);
 	transition: transform 250ms ease, font-size 250ms ease;
 	&:hover{
@@ -435,6 +448,10 @@ color: var(--secondary-text-color);
 
 }
 
+=======
+	}
+}
+>>>>>>> Stashed changes
 .section-hero__body{
 	display: flex;
 	justify-content: space-between;
@@ -510,6 +527,7 @@ margin-bottom: 10px;
 
 }
 .section-hero__arrow{
+<<<<<<< Updated upstream
 	position: relative;
 	display: inline-block;
 	fill: var(--secondary-text-color);
@@ -546,3 +564,21 @@ margin-bottom: 10px;
 .section-hero-link__icon-long{
 	
 }
+=======
+	display: inline-block;
+	fill: var(--secondary-text-color);
+	margin-top: 10px;
+	&:hover{
+		.section-hero-link__icon{
+					width: 70px;
+			}
+	}
+	
+
+
+}
+.section-hero-link__icon{
+	width: 40px;
+	height: 16px;
+}
+>>>>>>> Stashed changes
