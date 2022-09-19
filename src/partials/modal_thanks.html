@@ -1,5 +1,5 @@
-<div class="modal__tnanks modal">
-  <svg class="close__modal__icon js-modal-close">
+<div class="modal__thanks modal" data-modal="thanks">
+  <svg class="close__modal__thanks__icon js-modal-close">
     <use href="./images/icons.svg#icon-ep_close"></use>
   </svg>
   <p class="modal__thanks__title">
@@ -13,33 +13,34 @@
     We appreciate your patience.
   </p>
   <form class="modal__thanks__form">
-    <input
-      type="text"
-      class="modal__thanks__form__input"
-      name="name"
-      placeholder="Name"
-      required
-    />
-    <input
-      type="tel"
-      class="modal__thanks__form__input"
-      name="phone_number"
-      placeholder="Phone"
-      required
-    />
-    <input
-      type="email"
-      class="modal__thanks__form__input"
-      name="email"
-      placeholder="Email"
-      required
-    />
-    <textarea
-      placeholder="Comment"
-      class="modal__thanks__form__input"
-      name="comment"
-    ></textarea>
+    <div class="modal__thanks__form__inputs__box">
+      <input
+        type="text"
+        class="modal__thanks__form__input"
+        name="name"
+        placeholder="Name"
+        required
+      />
+      <input
+        type="tel"
+        class="modal__thanks__form__input"
+        name="phone_number"
+        placeholder="Phone"
+        required
+      />
+      <input
+        type="email"
+        class="modal__thanks__form__input"
+        name="email"
+        placeholder="Email"
+        required
+      />
+      <textarea
+        placeholder="Comment"
+        class="modal__thanks__form__input modal__thanks__comment__input"
+        name="comment"
+      ></textarea>
+    </div>
     <button type="submit" class="modal__thanks__submit__button">Submit</button>
   </form>
 </div>
-<div class="overlay js-overlay-modal"></div>
