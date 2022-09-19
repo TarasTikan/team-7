@@ -7,11 +7,7 @@
   border: 2px solid #f8d24e;
   border-radius: 10px;
 
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-100%, -50%);
-  transition: all var(--duration-cubic);
+  background-color: var(--secondary-text-color);
 
   @media screen and (max-width: 767px) {
     height: 100vh;
