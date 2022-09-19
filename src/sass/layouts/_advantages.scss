@@ -2,7 +2,14 @@
   padding-top: 42px;
   padding-bottom: 60px;
   background-color: var(--primary-bg-color);
+  
+  @include tablet {
+    padding-bottom: 204px;
+  }
 
+@include desktop {
+  padding-bottom: 180px;
+}
 }
 
 .advantages__list {
@@ -63,10 +70,11 @@
   font-family: 'Montserrat';
   font-weight: 700;
   font-size: 12px;
-  line-height: 1.17;
+  line-height: 1.7;
   text-align: center;
   color: var(--secondary-text-color);
   @include tablet {
+    font-weight: 400;
       font-size: 14px;
       line-height: 1.71;
     }
