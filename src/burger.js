@@ -1,5 +1,6 @@
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 const buttonOpen = document.querySelector('.button-burger-open');
 const buttonClose = document.querySelector('.button-burger-close');
 const slideDownMenu = document.querySelector('.header__menu');
@@ -14,6 +15,8 @@ buttonClose.addEventListener('click', function () {
 
 })
 =======
+=======
+>>>>>>> Stashed changes
 const burgerOpen = document.querySelector('.button-burger-open');
 
 const burgerClose = document.querySelector('.button-burger-close');
@@ -26,4 +29,7 @@ burgerOpen.addEventListener('click', function () {
 burgerClose.addEventListener('click', function () {
 	burgerMenu.classList.remove('active');
 })
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
