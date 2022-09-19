@@ -1,10 +1,11 @@
-<section class="about">
+
+<section class="about" id="howitsmade">
   <div class="container">
+    <p class="about__pre-title">tradition and love</p>
+    <h2 class="about__title">how it’s made?</h2>
     <div class="about__wrap">
-      <p class="about__pre-title">tradition and love</p>
-      <h2 class="about__title">how it’s made?</h2>
       <div class="about__picture-wrap">
-        <picture>
+        <picture class="about__picture">
           <source
             srcset="
               ./images/cow_desktop_1x.png 1x,
@@ -29,7 +30,6 @@
           <img
             src="./images/cow_mobile_1x.png"
             alt="cow"
-            width="290"
             class="about__cow-img"
           />
         </picture>
@@ -47,11 +47,14 @@
           three years. Sweets lovers can expect 55 types of ice cream, 15 types
           of coffee and 23 milkshakes.
         </p>
-        <p class="about__text">
+        <p class="about__text about__text-lost">
           This is enough to choose ice cream and coffee for any mood!
         </p>
         <button type="button" class="about__btn js-open-modal" data-modal="1">
           Read more
+          <svg class="about__btn-icon" width="12" height="12">
+            <use href="./images/icons.svg#icon-arrow-bth"></use>
+          </svg>
         </button>
       </div>
     </div>

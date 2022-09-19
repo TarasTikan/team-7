@@ -1,3 +1,10 @@
+@import "./modal_thanks";
+@import "./modal_hero";
+@import "./modal_map";
+@import "./modal_products";
+@import "./modal_video";
+
+
 .modal {
   /* Скрываем окна  */
   opacity: 0;
@@ -6,18 +13,21 @@
   /*  Установаем ширину окна  */
   width: 100%;
 
+
   /*  Центрируем и задаем z-index */
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 30; /* Должен быть выше чем у подложки*/
-
+  transform: translate(-100%, -50%);
+  z-index: 300000000000000; /* Должен быть выше чем у подложки*/
+  transition:  all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  // transition: 250ms all;
   /*  Побочные стили   */
-  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  background-color: #fff;
-  transition: 250ms all;
+  // box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  // text-align: center;
+  // background-color: #fff;
+ 
+  
 }
 
 /* Стили для активных классов подложки и окна */
@@ -26,4 +36,8 @@
 .overlay.active {
   opacity: 1;
   visibility: visible;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%);
 }

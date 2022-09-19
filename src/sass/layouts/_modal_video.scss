@@ -1,8 +1,5 @@
 
 .modal__video {
-  opacity: 0;
-  visibility: hidden;
-  
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -13,7 +10,9 @@
 
   width: 90vw;
   max-width: 440px;
+  max-height: 90%;
 
+  overflow-y: scroll;
   padding-top: 28px;
   padding-bottom: 28px;
   padding-left: 28px;
@@ -22,13 +21,6 @@
   background-color: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
-  z-index: 33;
-
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-100%, -50%);
-  transition: 250ms all;
 
   @media screen and (min-width: 480px) {
     width: 440px;
@@ -42,15 +34,7 @@
   }
 }
 
-.modal.active,
-.overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
 
-.modal.active {
-  transform: translate(-50%, -50%);
-}
 
 .modal__video__title {
   font-family: 'Seymour One', sans-serif;
