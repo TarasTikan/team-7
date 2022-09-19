@@ -1,10 +1,24 @@
 //
-
+//------пульсация-------// 
+@keyframes pulse_animation {
+  0% {
+    -webkit-transform: scale(0.7);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(0.7);
+  }
+}
 
 
 //-------------------HEADER--------------------------//
  
 .header {
+	@media screen and (max-width:768px){
+		background-color: var(--primary-bg-color);
+	}
 	position: fixed;
 	width: 100%;
 	z-index: 90;
@@ -104,8 +118,10 @@ line-height: 1.25;
 .header__link {
 	text-decoration: none;
 	color: var(--secondary-text-color);
-	
 	transition: color 250ms ease;
+	&:focus{
+		color: var(--primary-text-color);
+	}
 	@include desktop {
 		&:hover{
 			color: var(--default-bth-color);
@@ -545,4 +561,33 @@ margin-bottom: 10px;
 
 .section-hero-link__icon-long{
 	
+}
+
+.button-icon-back{
+	transform: rotate(270deg);
+
+}
+.link-back{
+	position: fixed;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: var(--default-bth-color);
+	opacity: 0.5;
+	transition: opacity 250ms ease;
+	z-index: 100;
+	animation-name: pulse_animation;
+	animation-duration: 3000ms;
+	animation-iteration-count: infinite;
+	&:hover{
+		opacity: 1;
+		animation-play-state: paused;
+	}
+
 }
