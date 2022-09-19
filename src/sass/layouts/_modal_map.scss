@@ -1,0 +1,102 @@
+
+
+.modal__map {
+  opacity: 0;
+  visibility: hidden;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 90vw;
+  max-width: 440px;
+
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 28px;
+  padding-right: 28px;
+
+  background-color: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+
+  z-index: 33;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, -50%);
+  transition: 250ms all;
+
+  @media screen and (min-width: 480px) {
+    width: 440px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    max-width: 568px;
+    padding: 32px 60px;
+    gap: 32px;
+  }
+}
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%);
+}
+
+.modal__map__title {
+  font-family: 'Seymour One', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+.modal__map__link__button {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--primary-text-color);
+  background-color: var(--accept-color);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  line-height: 1.21;
+  }
+  
+  padding: 12px 32px;
+  border-radius: 10px;
+}
+
+.close__modal__map__icon {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 20px;
+  }
+}
