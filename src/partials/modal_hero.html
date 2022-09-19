@@ -1,5 +1,5 @@
-<div class="buynow container">
-  <button type="button" class="buynow__close">
+<div class="buynow modal" data-modal="buynow">
+  <button type="button" class="buynow__close js-modal-close">
     <svg class="buynow__icon" width="16" height="16">
       <use href="./images/icons.svg#icon-ep_close"></use>
     </svg>
@@ -14,38 +14,41 @@
             name="buynow"
             value="ice-cream"
             id="ice-cream"
+            class="buynow__check visually-hidden"
           />
-          <label for="ice-cream">
-            <picture>
-              <source
-                srcset="
-                  ./images/ice_cream_desktop_1x.png 1x,
-                  ./images/ice_cream_desktop_2x.png 2x
-                "
-                media="(min-width: 1200px)"
-              />
-              <source
-                srcset="
-                  ./images/ice_cream_tablet_1x.png 1x,
-                  ./images/ice_cream_tablet_2x.png 2x
-                "
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
-                  ./images/ice_cream_mobile_1x.png 1x,
-                  ./images/ice_cream_mobile_2x.png 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <img
-                src="./images/ice_cream_mobile_2x.png"
-                alt="Ice cream"
-                width="132"
-                height="132"
-                class="buynow__img"
-              />
-            </picture>
+          <label for="ice-cream" class="buynow__label">
+            <div class="buynow__thumd buynow__thumd--cream">
+              <picture>
+                <source
+                  srcset="
+                    ./images/ice_cream_desktop_1x.png 1x,
+                    ./images/ice_cream_desktop_2x.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/ice_cream_tablet_1x.png 1x,
+                    ./images/ice_cream_tablet_2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/ice_cream_mobile_1x.png 1x,
+                    ./images/ice_cream_mobile_2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/ice_cream_mobile_2x.png"
+                  alt="Ice cream"
+                  width="132"
+                  height="132"
+                  class="buynow__img"
+                />
+              </picture>
+            </div>
             ice cream
           </label>
         </li>
@@ -56,38 +59,41 @@
             name="buynow"
             value="ice-coffee"
             id="ice-coffee"
+            class="buynow__check visually-hidden"
           />
-          <label for="ice-coffee">
-            <picture>
-              <source
-                srcset="
-                  ./images/ice_coffee_desktop_1x.png 1x,
-                  ./images/ice_coffee_desktop_2x.png 2x
-                "
-                media="(min-width: 1200px)"
-              />
-              <source
-                srcset="
-                  ./images/ice_coffee_tablet_1x.png 1x,
-                  ./images/ice_coffee_tablet_2x.png 2x
-                "
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
-                  ./images/ice_coffee_mobile_1x.png 1x,
-                  ./images/ice_coffee_mobile_2x.png 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <img
-                src="./images/ice_coffee_mobile_2x.png"
-                alt="Ice coffee"
-                width="132"
-                height="132"
-                class="buynow__img"
-              />
-            </picture>
+          <label for="ice-coffee" class="buynow__label">
+            <div class="buynow__thumd buynow__thumd--coffee">
+              <picture>
+                <source
+                  srcset="
+                    ./images/ice_coffee_desktop_1x.png 1x,
+                    ./images/ice_coffee_desktop_2x.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/ice_coffee_tablet_1x.png 1x,
+                    ./images/ice_coffee_tablet_2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/ice_coffee_mobile_1x.png 1x,
+                    ./images/ice_coffee_mobile_2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/ice_coffee_mobile_2x.png"
+                  alt="Ice coffee"
+                  width="132"
+                  height="132"
+                  class="buynow__img"
+                />
+              </picture>
+            </div>
             ice coffee
           </label>
         </li>
@@ -97,68 +103,73 @@
             type="checkbox"
             name="buynow"
             value="milkshake"
+            class="buynow__check visually-hidden"
             id="milkshake"
           />
-          <label for="milkshake">
-            <picture>
-              <source
-                srcset="
-                  ./images/milkshakes_desktop_1x.png 1x,
-                  ./images/milkshakes_desktop_2x.png 2x
-                "
-                media="(min-width: 1200px)"
-              />
-              <source
-                srcset="
-                  ./images/milkshakes_tablet_1x.png 1x,
-                  ./images/milkshakes_tablet_2x.png 2x
-                "
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
-                  ./images/milkshakes_mobile_1x.png 1x,
-                  ./images/milkshakes_mobile_2x.png 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <img
-                src="./images/milkshakes_mobile_2x.png"
-                alt="Milkshake"
-                width="132"
-                height="132"
-                class="buynow__img"
-              />
-            </picture>
-            ice coffee
+          <label for="milkshake" class="buynow__label">
+            <div class="buynow__thumd buynow__thumd--milkshake">
+              <picture>
+                <source
+                  srcset="
+                    ./images/milkshakes_desktop_1x.png 1x,
+                    ./images/milkshakes_desktop_2x.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/milkshakes_tablet_1x.png 1x,
+                    ./images/milkshakes_tablet_2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/milkshakes_mobile_1x.png 1x,
+                    ./images/milkshakes_mobile_2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/milkshakes_mobile_2x.png"
+                  alt="Milkshake"
+                  width="132"
+                  height="132"
+                  class="buynow__img"
+                />
+              </picture>
+            </div>
+            milkshake
           </label>
         </li>
       </ul>
     </div>
+    <div class="inputes">
+      <input
+        type="text"
+        name="buynow-name"
+        id="buynow-name"
+        class="inputes__item"
+        placeholder="Name"
+        required
+      />
 
-    <input
-      type="text"
-      name="buynow-name"
-      id="buynow-name"
-      class="buynow__input"
-      placeholder="Name"
-    />
+      <input
+        type="tel"
+        name="buynow-phone"
+        id="buynow-phone"
+        class="inputes__item"
+        placeholder="Phone"
+        required
+      />
 
-    <input
-      type="tel"
-      name="buynow-phone"
-      id="buynow-phone"
-      class="buynow__input"
-      placeholder="Phone"
-    />
-
-    <textarea
-      name="buynow-comment"
-      id="buynow-comment"
-      class="buynow__textarea"
-      placeholder="Comment"
-    ></textarea>
-
-    <button type="submit" class="buynow__btn">Submit</button>
+      <textarea
+        name="buynow-comment"
+        id="buynow-comment"
+        class="inputes__textarea inputes__item"
+        placeholder="Comment"
+      ></textarea>
+      <button type="submit" class="inputes__btn">Submit</button>
+    </div>
   </form>
 </div>
