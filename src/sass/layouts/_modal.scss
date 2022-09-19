@@ -26,6 +26,7 @@
   // box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   // text-align: center;
   // background-color: #fff;
+ 
   
 }
 
@@ -35,4 +36,8 @@
 .overlay.active {
   opacity: 1;
   visibility: visible;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%);
 }
