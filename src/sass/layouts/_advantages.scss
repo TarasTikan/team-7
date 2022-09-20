@@ -16,7 +16,7 @@
 @include desktop {
   padding-bottom: 180px;
 }
-
+}
 
 
 .advantages__list {
@@ -89,6 +89,7 @@
       padding-left: 32px;
       padding-right: 32px;
     }
+  }
 .advantages__title-cow::before {
   content:'';
   background-image: url(../images/cow.png);
