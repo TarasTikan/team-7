@@ -1,15 +1,29 @@
 .products {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(../images/fon_icecreem_1x.png);
+    background-repeat: repeat;
+    background-size: contain;
+    background-image: url(../images/mobile-fon-1x.png);
     @include retina {
         background-image: url(../images/fon_icecreem_2x.png);
+    }
+    @include tablet {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../images/fon_icecreem_1x.png);
+        @include retina {
+            background-image: url(../images/fon_icecreem_2x.png);
+        }
     }
     @include desktop {
         padding-top: 60px;
         padding-bottom: 94px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../images/fon_icecreem_1x.png);
+        @include retina {
+            background-image: url(../images/fon_icecreem_2x.png);
+        }
 }
 }
 
