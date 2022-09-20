@@ -134,9 +134,9 @@
   background-color: rgba(248, 210, 78, 0.1);
 
   transition: outline var(--duration-cubic);
-  &:focus {
-    outline-color: #84a178;
-  }
+    &:focus {
+      outline: var(--primary-bg-color) solid 1px;
+    }
 }
 
 .modal__thanks__form__input::placeholder {
