@@ -18,7 +18,9 @@
  
 .header {
 	position: fixed;
-	
+@media screen and (max-width:767px){
+	background-color: var(--primary-bg-color);
+}
 	width: 100%;
 	z-index: 90;
 @include tablet {
@@ -574,7 +576,8 @@ margin-bottom: 10px;
 
 }
 .link-back{
-   position: fixed;
+	@media screen and (min-width:768px){
+ position: fixed;
    bottom: 10px;
    left: 50%;
    transform: translateX(-50%);
@@ -595,5 +598,7 @@ margin-bottom: 10px;
       opacity: 1;
       animation-play-state: paused;
    }
+	}
+  
 
 }
