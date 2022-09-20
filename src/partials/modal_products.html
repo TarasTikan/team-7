@@ -1,33 +1,36 @@
-<div class="ingredients-modal modal container" data-modal="ingredients">
+<div class="ingredients-modal modal" data-modal="ingredients">
   <button type="button" class="ingredients-modal__close js-modal-close">
-    <svg class="ingredients-modal__icon" width="16" height="16">
+    <svg class="ingredients-modal__icon" width="20" height="20">
       <use href="./images/icons.svg#icon-ep_close"></use>
     </svg>
   </button>
   <h2 class="ingredients-modal__title">Chocolate icecream</h2>
-  <picture>
-    <source
-      srcset="
-        ./images/chokolate_icecreem_desktop_1x.jpg 1x,
-        ./images/chokolate_icecreem_desktop_2x.jpg 2x
-      "
-      media="(min-width: 1200px)"
-    />
-    <source
-      srcset="
-        ./images/chokolate_icecreem_mobile_1x.jpg 1x,
-        ./images/chokolate_icecreem_mobile_2x.jpg 2x
-      "
-      media="(max-width: 767px)"
-    />
-    <img
-      src="./images/chokolate_icecreem_mobile_2x.jpg"
-      alt="Chocolate icecreem"
-      width="211"
-      height="141"
-      class="ingredients-modal__img"
-    />
-  </picture>
+  <div class="ingredients-modal__thumb">
+    <picture>
+      <source
+        srcset="
+          ./images/chokolate_icecreem_desktop_1x.jpg 1x,
+          ./images/chokolate_icecreem_desktop_2x.jpg 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/chokolate_icecreem_mobile_1x.jpg 1x,
+          ./images/chokolate_icecreem_mobile_2x.jpg 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img
+        src="./images/chokolate_icecreem_mobile_2x.jpg"
+        alt="Chocolate icecreem"
+        width="211"
+        height="141"
+        class="ingredients-modal__img"
+      />
+    </picture>
+  </div>
+
   <ul class="ingredients-modal__list">
     <li class="ingredients-modal__item">
       <p class="ingredients-modal__numbers">320</p>
@@ -46,7 +49,9 @@
       <p class="ingredients-modal__descr">Carbs</p>
     </li>
   </ul>
+
   <h3 class="ingredients__title">Ingredients</h3>
+
   <ul class="ingredients__list">
     <li class="ingredients__item">
       <p class="ingredients__descr">Milk</p>
@@ -76,8 +81,8 @@
   <form class="inputes">
     <input
       type="text"
-      name="buynow-name"
-      id="buynow-name"
+      name="ingredients-name"
+      id="ingredients-name"
       class="inputes__item"
       placeholder="Name"
       required
@@ -85,8 +90,8 @@
 
     <input
       type="tel"
-      name="buynow-phone"
-      id="buynow-phone"
+      name="ingredients-phone"
+      id="ingredients-phone"
       class="inputes__item"
       placeholder="Phone"
       required
@@ -97,8 +102,8 @@
     />
 
     <textarea
-      name="buynow-comment"
-      id="buynow-comment"
+      name="ingredients-comment"
+      id="ingredients-comment"
       class="inputes__textarea inputes__item"
       placeholder="Comment"
     ></textarea>
