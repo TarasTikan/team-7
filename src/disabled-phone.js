@@ -1,5 +1,5 @@
 function validatePhone(phone){
- var regex = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
+ var regex = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){12,14}(\s*)?$/;
  return regex.test(phone);
 }
  
