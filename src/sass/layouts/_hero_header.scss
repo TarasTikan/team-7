@@ -289,7 +289,7 @@ transition: background-color 250ms ease;
     background-color: var(--primary-bg-color);
 position: relative;
 padding-top: 100px;
-padding-bottom: 260px;
+padding-bottom: 190px;
 @include tablet {
 	padding-bottom: 22px;
 }
@@ -573,7 +573,6 @@ margin-bottom: 10px;
 
 .button-icon-back{
    transform: rotate(270deg);
-
 }
 .link-back{
 	@media screen and (min-width:768px){
@@ -599,6 +598,7 @@ margin-bottom: 10px;
       animation-play-state: paused;
    }
 	}
-  
-
+  @media screen and (max-width:767px) {
+	display: none;
+  }
 }
