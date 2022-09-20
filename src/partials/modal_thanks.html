@@ -23,14 +23,15 @@
       />
       <input
         type="tel"
-        class="modal__thanks__form__input"
+        class="modal__thanks__form__input phone-input-val"
         name="phone_number"
-        placeholder="Phone"
+        placeholder="Phone +380(67)777-7-777"
         required
+        pattern="/^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/"
       />
       <input
         type="email"
-        class="modal__thanks__form__input"
+        class="modal__thanks__form__input mail-input-val"
         name="email"
         placeholder="Email"
         required
@@ -41,6 +42,11 @@
         name="comment"
       ></textarea>
     </div>
-    <button type="submit" class="modal__thanks__submit__button">Submit</button>
+    <button
+      type="submit"
+      class="modal__thanks__submit__button submit-button-val"
+    >
+      Submit
+    </button>
   </form>
 </div>

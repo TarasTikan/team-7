@@ -61,6 +61,13 @@
     top: 20px;
     right: 20px;
   }
+
+        transition: scale var(--duration-cubic);
+    
+        &:hover,
+        &:focus {
+          scale: 1.3;
+        }
 }
 
 .modal__video__video {
