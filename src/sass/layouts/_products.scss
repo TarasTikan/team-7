@@ -2,6 +2,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-repeat: no-repeat;
+    background-size: cover;
     background-image: url(../images/fon_icecreem_1x.png);
     @include retina {
         background-image: url(../images/fon_icecreem_2x.png);
@@ -73,6 +74,7 @@ line-height: 1.26;
 }
 
 .products__item {
+    position: relative;
     width: 280px;
     height: 420px;
    padding-left: 26px;
@@ -94,6 +96,7 @@ border-radius: 15.7808px;
 }
 
 .products__item:nth-child(2) {
+    position: relative;
     width: 280px;
     height: 420px;
    padding-left: 26px;
@@ -114,6 +117,7 @@ border-radius: 15.7808px;
 }
 
 .products__item:nth-child(3) {
+    position: relative;
     width: 280px;
     height: 420px;
    padding-left: 26px;
@@ -337,13 +341,26 @@ letter-spacing: 0.04em;
 }
 }
 
-.green__item-btn {
+.products__item-btn {
     background-color: transparent;
-border: 0;
-position: absolute;
-top: 195%;
-left: 41%;
-margin-left: auto;
-margin-right: auto;
-display: block;
+    border: none;
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 41%;
+    width: 40px;
+    transition: transform var(--duration-cubic),
+    stroke var(--duration-cubic),
+    stroke-width var(--duration-cubic);
 }
+
+.products__item-btn:hover {
+    transform: scaleX(1.5);
+}
+
+.products__item-btn:focus {
+    stroke: #131313;
+    stroke-width: 3px;
+    transform: scaleX(1.5);
+    }
+
