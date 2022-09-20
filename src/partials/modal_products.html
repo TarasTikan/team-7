@@ -73,30 +73,35 @@
       <p class="ingredients__numbers">10g</p>
     </li>
   </ul>
-  <form class="ingredients__form">
+  <form class="inputes">
     <input
       type="text"
-      name="ingredients-name"
-      id="ingredients-name"
-      class="ingredients__input"
+      name="buynow-name"
+      id="buynow-name"
+      class="inputes__item"
       placeholder="Name"
+      required
     />
 
     <input
       type="tel"
-      name="ingredients-phone"
-      id="ingredients-phone"
-      class="ingredients__input"
+      name="buynow-phone"
+      id="buynow-phone"
+      class="inputes__item"
       placeholder="Phone"
+      required
+      minlength="10"
+      maxlength="12"
+      pattern="\+?[0-9\s\-\(\)]+"
+      title="The field must contain only numbers"
     />
 
     <textarea
-      name="ingredients-comment"
-      id="ingredients-comment"
-      class="ingredients__textarea"
+      name="buynow-comment"
+      id="buynow-comment"
+      class="inputes__textarea inputes__item"
       placeholder="Comment"
     ></textarea>
-
-    <button type="submit" class="ingredients__btn">Submit</button>
+    <button type="submit" class="inputes__btn">Submit</button>
   </form>
 </div>
