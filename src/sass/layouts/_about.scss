@@ -10,6 +10,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    margin-top: 62px
    }
 
    @include desktop{
@@ -80,6 +81,42 @@
         margin: auto;
       }
 }
+
+.about__picture-wrap::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 22px;
+    width: 278.19px;
+    height: 278.25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/cow_mobile_1x.png);
+    @include retina {
+        background-image: url(../images/cow_mobile_2x.png);
+    }
+
+    @include tablet {
+        top: 24px;
+        width: 334px;
+        height: 330px;
+        background-image: url(../images/cow_tablet_1x.png);
+        @include retina {
+            background-image: url(../images/cow_tablet_2x.png);
+        }
+    }
+
+    @include desktop {
+        top: 39px;
+        width: 490px;
+        height: 490px;
+        background-image: url(../images/cow_desktop_1x.png);
+        @include retina {
+            background-image: url(../images/cow_desktop_2x.png);
+        }
+    }
+}
+
 .about__picture{
     position: relative;
     top: 20px;
@@ -97,7 +134,6 @@
 
 .about__text-wrap{
     text-align: center;
-    margin-top: 62px;
     @include tablet{
         width: 336px;
         text-align: left;

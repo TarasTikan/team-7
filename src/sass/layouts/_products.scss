@@ -1,13 +1,29 @@
 .products {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-image: url(../images/fon_icecreem_1x.png);
+    background-repeat: repeat;
+    background-size: contain;
+    background-image: url(../images/mobile-fon-1x.png);
     @include retina {
+        background-image: url(../images/fon_icecreem_2x.png);
+    }
+    @include tablet {
+        background-size: cover;
+        background-repeat: no-repeat;
         background-image: url(../images/fon_icecreem_1x.png);
+        @include retina {
+            background-image: url(../images/fon_icecreem_2x.png);
+        }
     }
     @include desktop {
         padding-top: 60px;
         padding-bottom: 94px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../images/fon_icecreem_1x.png);
+        @include retina {
+            background-image: url(../images/fon_icecreem_2x.png);
+        }
 }
 }
 
@@ -72,6 +88,7 @@ line-height: 1.26;
 }
 
 .products__item {
+    position: relative;
     width: 280px;
     height: 420px;
    padding-left: 26px;
@@ -93,6 +110,7 @@ border-radius: 15.7808px;
 }
 
 .products__item:nth-child(2) {
+    position: relative;
     width: 280px;
     height: 420px;
    padding-left: 26px;
@@ -101,7 +119,7 @@ border-radius: 15.7808px;
 box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
 border-radius: 15.7808px; 
 @include tablet {
-    width: 370px;
+    width: 224px;
     height: 428px;
 }
 @include desktop {
@@ -113,6 +131,7 @@ border-radius: 15.7808px;
 }
 
 .products__item:nth-child(3) {
+    position: relative;
     width: 280px;
     height: 420px;
    padding-left: 26px;
@@ -132,9 +151,9 @@ border-radius: 15.7808px;
 }
 }
 
-.circle-products {
+.circle-green {
     background-image: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
-    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
     border-radius: 98.6301px;
     position: relative;
     bottom: 105px; 
@@ -155,8 +174,39 @@ border-radius: 15.7808px;
         border-radius: 150px;
     }
 }
-
-.circle-products:nth-child(2) {
+.circle-green::before {
+    content: "";
+    display: block;
+    position: relative;
+    bottom: 5px;
+    width: 201px;
+    height: 208px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/ice_cream_mobile_1x.png);
+    @include retina {
+        background-image: url(../images/ice_cream_mobile_2x.png);
+    }
+    @include tablet {
+        bottom: 7px;
+        width: 196px;
+        height: 198px;
+        background-image: url(../images/ice_cream_tablet_1x.png);
+        @include retina {
+            background-image: url(../images/ice_cream_tablet_2x.png);
+        }
+    }
+    @include desktop {
+        bottom: 12px;
+        width: 301px;
+        height: 300px;
+        background-image: url(../images/ice_cream_desktop_1x.png);
+        @include retina {
+            background-image: url(../images/ice_cream_desktop_2x.png);
+        }
+    }
+}
+.circle-yellow {
     background-image: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
     box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
 border-radius: 98.6301px;
@@ -174,10 +224,45 @@ width: 201px;
     @include desktop{
         width: 301px;
         height: 300px;
+        bottom: 150px; 
+        right: 28px;
+        border-radius: 150px;
     }
 }
 
-.circle-products:nth-child(3) {
+.circle-yellow::before {
+    content: "";
+    display: block;
+    position: relative;
+    bottom: 5px;
+    width: 201px;
+    height: 208px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/ice_coffee_mobile_1x.png);
+    @include retina {
+        background-image: url(../images/ice_coffee_mobile_2x.png);
+    }
+    @include tablet {
+        bottom: 7px;
+        width: 196px;
+        height: 198px;
+        background-image: url(../images/ice_coffee_tablet_1x.png);
+        @include retina {
+            background-image: url(../images/ice_coffee_tablet_2x.png);
+        }
+    }
+    @include desktop {
+        bottom: 12px;
+        width: 301px;
+        height: 300px;
+        background-image: url(../images/ice_coffee_desktop_1x.png);
+        @include retina {
+            background-image: url(../images/ice_coffee_desktop_2x.png);
+        }
+    }
+}
+.circle-orange {
     background-image: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
     box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
 border-radius: 98.6301px;
@@ -190,26 +275,50 @@ width: 201px;
     @include tablet {
         width: 196px;
         height: 198px;
+        right: 12px;
     }
     @include desktop{
         width: 301px;
         height: 300px;
+        bottom: 150px; 
+        right: 28px;
+        border-radius: 150px;
     }
 }
-.products__item-img {
+
+.circle-orange::before {
+    content: "";
+    display: block;
     position: relative;
-    bottom: 10px;
+    bottom: 5px;
     width: 201px;
     height: 208px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/milkshakes_mobile_1x.png);
+    @include retina {
+        background-image: url(../images/milkshakes_mobile_2x.png);
+    }
     @include tablet {
+        bottom: 7px;
         width: 196px;
         height: 198px;
+        background-image: url(../images/milkshakes_tablet_1x.png);
+        @include retina {
+            background-image: url(../images/milkshakes_tablet_2x.png);
+        }
     }
-    @include desktop{
+    @include desktop {
+        bottom: 12px;
         width: 301px;
         height: 300px;
+        background-image: url(../images/milkshakes_desktop_1x.png);
+        @include retina {
+            background-image: url(../images/milkshakes_desktop_2x.png);
+        }
     }
 }
+
 
 .products__item-title {
     font-weight: 700;
@@ -248,9 +357,24 @@ letter-spacing: 0.04em;
 
 .products__item-btn {
     background-color: transparent;
-border: 0;
-position: absolute;
-bottom: -40%;
-left: 40%;
-display: block;
+    border: none;
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 41%;
+    width: 40px;
+    transition: transform var(--duration-cubic),
+    stroke var(--duration-cubic),
+    stroke-width var(--duration-cubic);
 }
+
+.products__item-btn:hover {
+    transform: scaleX(1.5);
+}
+
+.products__item-btn:focus {
+    stroke: #131313;
+    stroke-width: 3px;
+    transform: scaleX(1.5);
+    }
+
