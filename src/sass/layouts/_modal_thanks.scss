@@ -132,6 +132,11 @@
     line-height: 1.43;
   }
   background-color: rgba(248, 210, 78, 0.1);
+
+  transition: outline var(--duration-cubic);
+  &:focus {
+    outline-color: #84a178;
+  }
 }
 
 .modal__thanks__form__input::placeholder {
