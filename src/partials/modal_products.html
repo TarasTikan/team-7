@@ -1,0 +1,112 @@
+<div class="ingredients-modal modal" data-modal="ingredients">
+  <button type="button" class="ingredients-modal__close js-modal-close">
+    <svg class="ingredients-modal__icon" width="20" height="20">
+      <use href="./images/icons.svg#icon-ep_close"></use>
+    </svg>
+  </button>
+  <h2 class="ingredients-modal__title">Chocolate icecream</h2>
+  <div class="ingredients-modal__thumb">
+    <picture>
+      <source
+        srcset="
+          ./images/chocolate-icecream-desktop-1x.jpg 1x,
+          ./images/chocolate-icecream-desktop-2x.jpg 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/chocolate-icecream-mobile-1x.jpg 1x,
+          ./images/chocolate-icecream-mobile-2x.jpg 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img
+        src="./images/chocolate-icecream-mobile-2x.jpg"
+        alt="Chocolate icecreem"
+        width="211"
+        height="141"
+        class="ingredients-modal__img"
+      />
+    </picture>
+  </div>
+
+  <ul class="ingredients-modal__list">
+    <li class="ingredients-modal__item">
+      <p class="ingredients-modal__numbers">320</p>
+      <p class="ingredients-modal__descr">kcal</p>
+    </li>
+    <li class="ingredients-modal__item">
+      <p class="ingredients-modal__numbers">4g</p>
+      <p class="ingredients-modal__descr">Prote...</p>
+    </li>
+    <li class="ingredients-modal__item">
+      <p class="ingredients-modal__numbers">8,2g</p>
+      <p class="ingredients-modal__descr">Fats</p>
+    </li>
+    <li class="ingredients-modal__item">
+      <p class="ingredients-modal__numbers">40,4g</p>
+      <p class="ingredients-modal__descr">Carbs</p>
+    </li>
+  </ul>
+
+  <h3 class="ingredients__title">Ingredients</h3>
+
+  <ul class="ingredients__list">
+    <li class="ingredients__item">
+      <p class="ingredients__descr">Milk</p>
+      <p class="ingredients__numbers">100ml</p>
+    </li>
+    <li class="ingredients__item">
+      <p class="ingredients__descr">Belgian chocolate</p>
+      <p class="ingredients__numbers">20g</p>
+    </li>
+    <li class="ingredients__item">
+      <p class="ingredients__descr">Cream</p>
+      <p class="ingredients__numbers">150 ml</p>
+    </li>
+    <li class="ingredients__item">
+      <p class="ingredients__descr">Cocoa powder</p>
+      <p class="ingredients__numbers">30g</p>
+    </li>
+    <li class="ingredients__item">
+      <p class="ingredients__descr">Sugar</p>
+      <p class="ingredients__numbers">40g</p>
+    </li>
+    <li class="ingredients__item">
+      <p class="ingredients__descr">Vanilla sugar</p>
+      <p class="ingredients__numbers">10g</p>
+    </li>
+  </ul>
+  <form class="inputes">
+    <input
+      type="text"
+      name="ingredients-name"
+      id="ingredients-name"
+      class="inputes__item"
+      placeholder="Name"
+      required
+    />
+
+    <input
+      type="tel"
+      name="ingredients-phone"
+      id="ingredients-phone"
+      class="inputes__item"
+      placeholder="Phone"
+      required
+      minlength="10"
+      maxlength="12"
+      pattern="\+?[0-9\s\-\(\)]+"
+      title="The field must contain only numbers"
+    />
+
+    <textarea
+      name="ingredients-comment"
+      id="ingredients-comment"
+      class="inputes__textarea inputes__item"
+      placeholder="Comment"
+    ></textarea>
+    <button type="submit" class="inputes__btn">Submit</button>
+  </form>
+</div>

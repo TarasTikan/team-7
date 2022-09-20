@@ -2,39 +2,30 @@
   padding-top: 42px;
   padding-bottom: 60px;
   background-color: var(--primary-bg-color);
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
   @include tablet {
     padding-bottom: 204px;
   }
   @include desktop {
    padding-bottom: 180px;
      }
-
-<<<<<<< Updated upstream
-=======
-  @include desktop {
-    padding-bottom: 180px;
+  
+  @include tablet {
+    padding-bottom: 204px;
   }
->>>>>>> Stashed changes
+
+@include desktop {
+  padding-bottom: 180px;
 }
+
+
 
 .advantages__list {
   display: block;
   @include tablet {
-<<<<<<< Updated upstream
      display: flex;
      align-items: center;
      justify-content: baseline;
     }
-=======
-    display: flex;
-    align-items: center;
-    justify-content: baseline;
-  }
->>>>>>> Stashed changes
 }
 
 .advantages__item {
@@ -80,15 +71,15 @@
   }
 }
 
-<<<<<<< Updated upstream
 .advantages__text {
   font-family: 'Montserrat';
   font-weight: 700;
   font-size: 12px;
-  line-height: 1.17;
+  line-height: 1.7;
   text-align: center;
   color: var(--secondary-text-color);
   @include tablet {
+    font-weight: 400;
       font-size: 14px;
       line-height: 1.71;
     }
@@ -98,7 +89,6 @@
       padding-left: 32px;
       padding-right: 32px;
     }
-=======
 .advantages__title-cow::before {
   content:'';
   background-image: url(../images/cow.png);
@@ -114,7 +104,6 @@
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
- 
 }
 
 
@@ -133,8 +122,6 @@
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
-
->>>>>>> Stashed changes
 }
 
 .advantages__title-ice::before {
