@@ -105,6 +105,10 @@
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
+
+  @include retina {
+      background-image: url(../images/cow_2x.png);
+    }
 }
 
 
@@ -123,6 +127,10 @@
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
+
+  @include retina {
+      background-image: url(../images/weight_2x.png);
+    }
 }
 
 .advantages__title-ice::before {
@@ -140,6 +148,10 @@
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
+
+  @include retina {
+      background-image: url(../images/icecream_2x.png);
+    }
  
 }
 
