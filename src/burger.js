@@ -4,11 +4,6 @@ const buttonClose = document.querySelector('.button-burger-close');
 const slideDownMenu = document.querySelector('.header__menu');
 
 
-const home = document.querySelector('.home__link');
-const howMade = document.querySelector('.homemade__link');
-const products = document.querySelector('.product__link');
-const contact = document.querySelector('.contact__link');
-
 buttonOpen.addEventListener('click', function () {
 	slideDownMenu.classList.add('active');
 
@@ -19,25 +14,17 @@ buttonClose.addEventListener('click', function (e) {
 	
 })
 
-home.addEventListener('click', function () {
-	slideDownMenu.classList.remove('active');
-	
-})
+const links = document.querySelectorAll('.header__link');
 
-howMade.addEventListener('click', function () {
+console.log(links);
+for (let index = 0; index < links.length; index++) {
+	const link = links[index];
+	link.addEventListener('click', function () {
 	slideDownMenu.classList.remove('active');
-	
 })
+}
 
-products.addEventListener('click', function () {
-	slideDownMenu.classList.remove('active');
 	
-})
-
-contact.addEventListener('click', function () {
-	slideDownMenu.classList.remove('active');
-	
-})
 
 
 
