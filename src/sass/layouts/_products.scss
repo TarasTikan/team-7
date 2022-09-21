@@ -367,6 +367,7 @@ letter-spacing: 0.04em;
     transition: transform var(--duration-cubic),
     stroke var(--duration-cubic),
     stroke-width var(--duration-cubic);
+    cursor: pointer;
 }
 
 .products__item-btn:hover {
