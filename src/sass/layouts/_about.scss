@@ -134,13 +134,16 @@
 
 .about__text-wrap{
     text-align: center;
+    margin-top: 62px;
     @include tablet{
         width: 336px;
         text-align: left;
+        margin-top: 0px;
     }
     @include desktop{
         width: 464px;
         margin-left: 100px;
+        margin-top: 0px;
     }
 }
 
