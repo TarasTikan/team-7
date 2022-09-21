@@ -6,6 +6,7 @@ padding-bottom: 384px;
   background-color: var(--secondary-text-color);
   background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
   background-image: linear-gradient(
               rgba(252, 252, 252, 0.5),
               rgba(252, 252, 252, 0.5)),
@@ -31,6 +32,7 @@ padding-bottom: 384px;
   @include desktop {
     padding-bottom: 197px;
     background-size: cover;
+	 background-repeat: repeat;
     background-image: linear-gradient(
         rgba(252, 252, 252, 0.5),
         rgba(252, 252, 252, 0.5)),
