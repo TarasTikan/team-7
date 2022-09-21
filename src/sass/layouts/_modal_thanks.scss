@@ -135,7 +135,7 @@
 
   transition: outline var(--duration-cubic);
     &:focus {
-      outline: var(--primary-bg-color) solid 1px;
+      outline: var(--primary-bg-color) solid 2px;
     }
 }
 
