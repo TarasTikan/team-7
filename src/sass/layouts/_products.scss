@@ -5,7 +5,7 @@
     background-size: contain;
     background-image: url(../images/mobile-fon-1x.png);
     @include retina {
-        background-image: url(../images/fon_icecreem_2x.png);
+        background-image: url(../images/mobile-fon-2x.png);
     }
     @include tablet {
         background-size: cover;
@@ -361,7 +361,8 @@ letter-spacing: 0.04em;
     display: block;
     position: absolute;
     bottom: 20px;
-    left: 41%;
+    left: 50%;
+    transform: translateX(-50%);
     width: 40px;
     transition: transform var(--duration-cubic),
     stroke var(--duration-cubic),
