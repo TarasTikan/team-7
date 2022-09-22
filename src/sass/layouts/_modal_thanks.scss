@@ -147,6 +147,7 @@
 
 .modal__thanks__comment__input {
   height: 64px;
+  resize: none;
   @media screen and (min-width: 768px) {
     height: 84px;
   }
