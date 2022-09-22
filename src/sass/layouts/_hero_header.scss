@@ -70,6 +70,8 @@
 	z-index: 99;
 	&.active{
 		transform: translateY(0);
+		position: fixed;
+		
 	}
 	@include tablet {
 		background-color: var(--card-bg-color);
