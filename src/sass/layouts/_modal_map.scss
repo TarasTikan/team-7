@@ -67,6 +67,12 @@
   
   padding: 12px 32px;
   border-radius: 10px;
+
+    &:focus {
+      background-color: var(--hover-bth-color);
+      color: var(--secondary-text-color);
+      outline: none;
+    }
 }
 
 .close__modal__map__icon {
