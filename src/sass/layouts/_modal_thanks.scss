@@ -170,6 +170,12 @@
     font-size: 14px;
     line-height: 1.21;
   }
+
+    &:focus {
+      background-color: var(--hover-bth-color);
+      color: var(--secondary-text-color);
+      outline: none;
+    }
 }
 
 
