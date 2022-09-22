@@ -28,7 +28,7 @@
     background-color: transparent;
     border: none;
     transition: scale var(--duration-cubic);
-    cursor: pointer;
+    cursor: url('/src/images/Vector.png'), auto;
 
     &:hover,
     &:focus {

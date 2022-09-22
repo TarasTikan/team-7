@@ -121,6 +121,7 @@ line-height: 1.25;
 }
 
 .header__link {
+	cursor: url('/src/images/Vector.png'), auto;
 	display: inline-block;
 	text-decoration: none;
 	color: var(--secondary-text-color);
@@ -145,7 +146,7 @@ line-height: 1.25;
 
 
 .button-burger-open {
-	cursor: pointer;
+	cursor: url('/src/images/Vector.png'), auto;
 	display: flex;
 	align-items: center;
 	position: relative;
@@ -183,7 +184,7 @@ line-height: 1.25;
 
 //-----Button buy-----//
 .button {
-	cursor: pointer;
+	cursor: url('/src/images/Vector.png'), auto;
 color: var(--primary-text-color);
 font-weight: 600;
 font-size: 14px;
@@ -241,6 +242,7 @@ transition: background-color 250ms ease;
 //------------------------// 
 //----button product----//
 .button-link {
+	cursor: url('/src/images/Vector.png'), auto;
 	display: flex;
 	width: 62px;
 	height: 24px;
@@ -429,6 +431,7 @@ color: var(--secondary-text-color);
 }
 
 .section-hero__link {
+	cursor: url('/src/images/Vector.png'), auto;
 	display: flex;
 	width: 82.8px;
 	align-items: center;
@@ -546,6 +549,7 @@ margin-bottom: 10px;
 
 }
 .section-hero__arrow{
+	cursor: url('/src/images/Vector.png'), auto;
 	position: relative;
 	display: inline-block;
 	fill: var(--secondary-text-color);
@@ -585,6 +589,7 @@ margin-bottom: 10px;
    transform: rotate(270deg);
 }
 .link-back{
+	cursor: url('/src/images/Vector.png'), auto;
 	@media screen and (min-width:768px){
  position: fixed;
    bottom: 10px;
