@@ -165,7 +165,7 @@
   border-radius: 10px;
   border: none;
   color: var(--primary-text-color);
-  cursor: pointer;
+  cursor: url('/src/images/Vector.png'), auto;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -193,7 +193,7 @@
   position: absolute;
     width: auto;
     height: auto;
-    cursor: pointer;
+    cursor: url('/src/images/Vector.png'), auto;
     top: 8px;
     right: 8px;
     background-color: transparent;

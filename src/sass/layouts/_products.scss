@@ -367,7 +367,7 @@ letter-spacing: 0.04em;
     transition: transform var(--duration-cubic),
     stroke var(--duration-cubic),
     stroke-width var(--duration-cubic);
-    cursor: pointer;
+    cursor: url('/src/images/Vector.png'), auto;
 }
 
 .products__item-btn:hover {

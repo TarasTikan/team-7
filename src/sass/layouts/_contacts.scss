@@ -115,6 +115,7 @@
 }
 // l-h:1.83
 .contacts__link {
+  cursor: url('/src/images/Vector.png'), auto;
   display: inline-block;
   width: 190px;
 
@@ -218,6 +219,7 @@
 }
 // l-h:1.5
 .connects__link {
+  cursor: url('/src/images/Vector.png'), auto;
   display: block;
   text-decoration: none;
   font-weight: 500;
@@ -272,7 +274,7 @@
   line-height: 1.29;
   background-color: #f8d24e;
   border-radius: 10px;
-  cursor: pointer;
+  cursor: url('/src/images/Vector.png'), auto;
   outline: none;
 
   display: flex;

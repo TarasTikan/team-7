@@ -44,6 +44,7 @@
 }
 
 .socials__list {
+  
   display: flex;
   list-style: none;
   gap: 28px;
@@ -58,6 +59,7 @@
   }
 }
 .socials__link {
+  cursor: url('/src/images/Vector.png'), auto;
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -93,6 +95,7 @@
 }
 .footer__link {
   text-decoration: none;
+  cursor: url('/src/images/Vector.png'), auto;
 }
 .footer__tel {
   display: block;
@@ -115,6 +118,7 @@
 }
 
 .tel__link {
+  cursor: url('/src/images/Vector.png'), auto;
   color: var(--secondary-text-color);
   transition: color 250ms ease;
   &:hover,
